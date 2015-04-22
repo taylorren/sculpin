@@ -1,0 +1,45 @@
+{% set active =99 %}
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{page.name}} | RSYWX.com{% endblock %}
+{% block description %}{{page.description}}{% endblock %}
+{% block wrapper %}
+    <!-- ******CONTENT****** --> 
+    <div class="content container">
+        <div class="page-wrapper">
+            <header class="page-heading clearfix">
+                <h1 class="heading-title pull-left">{{page.name}}</h1>
+                <div class="breadcrumbs pull-right">
+                    <ul class="breadcrumbs-list">
+                        <li class="breadcrumbs-label">你的位置：</li>
+                        <li><a href="/">首页</a><i class="fa fa-angle-right"></i></li>
+                        <li class="current">{{page.name}}</li>
+                    </ul>
+                </div><!--//breadcrumbs-->
+            </header> 
+            <div class="page-content">
+                <div class="row">
+                    <article class="contact-form col-md-8 col-sm-7  page-row">                            
+                        {{page.blocks.content|raw}}
+                    </article><!--//contact-form-->
+                    <aside class="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
+                        <section class="widget has-divider">
+                            <h3 class="title">另外一个任氏有无轩</h3>
+                            <p>任氏有无轩有两个主力站点。一个是这里：<a href="http://www.rsywx.com">RSYWX.com</a>。另一个是<a href="https://rsywx.net">RSYWX.net</a>。RSYWX.net是一个藏书、读书的站点，也是我的博客和维客的站点。</p>
+                            <a class="btn btn-theme" href="#"><i class="fa fa-eye"></i> 去看看吧 &raquo;</a>
+                        </section><!--//widget-->   
+
+                    </aside><!--//page-sidebar-->
+                </div><!--//page-row-->
+                <div class="page-row">
+                    <article class="map-section">
+                        <h3 class="title">我在这里</h3>
+                        <div id="map"><img src="/assets/images/location.png" height="300px" alt="我的位置"></div><!--//map-->
+                    </article><!--//map-->
+                </div><!--//page-row-->
+            </div><!--//page-content-->
+        </div><!--//page-wrapper--> 
+    </div><!--//content-->
+{% endblock %}
+
+

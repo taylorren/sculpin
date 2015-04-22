@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>{% block title %}RSYWX.com{% endblock %}</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="author" content="肾上,任氏有无轩主人,TR@SOE">    
+    <link rel="shortcut icon" href="/favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>   
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" href="/assets/plugins/pretty-photo/css/prettyPhoto.css"> 
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="/assets/css/styles.css">
+</head> 
+
+<body class="home-page">
+    <div class="wrapper">
+        {% include "header.html.twig" %}        
+        {% include "nav.html.twig" %}
+
+        {% block wrapper %}
+            {% block content %}
+            {% endblock %}
+        {% endblock %}
+    </div><!--//wrapper-->
+
+    {% include "footer.html.twig" %}
+
+    <!-- *****CONFIGURE STYLE****** -->  
+    <div class="config-wrapper hidden-xs">
+        <div class="config-wrapper-inner">
+            <a id="config-trigger" class="config-trigger" href="#"><i class="fa fa-cog"></i></a>
+            <div id="config-panel" class="config-panel">
+                <p>Choose Colour</p>
+                <ul id="color-options" class="list-unstyled list-inline">
+                    <li class="default active" ><a data-style="/assets/css/styles.css" data-logo="/assets/images/logo.png" href="#"></a></li>
+                    <li class="green"><a data-style="/assets/css/styles-green.css" data-logo="/assets/images/logo-green.png" href="#"></a></li>
+                    <li class="purple"><a data-style="/assets/css/styles-purple.css" data-logo="/assets/images/logo-purple.png" href="#"></a></li>
+                    <li class="red"><a data-style="/assets/css/styles-red.css" data-logo="/assets/images/logo-red.png" href="#"></a></li>
+                </ul><!--//color-options-->
+                <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+            </div><!--//configure-panel-->
+        </div><!--//config-wrapper-inner-->
+    </div><!--//config-wrapper-->
+
+    <!-- Javascript -->          
+    <script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="/assets/plugins/bootstrap-hover-dropdown.min.js"></script> 
+    <script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="/assets/plugins/pretty-photo/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jflickrfeed/jflickrfeed.min.js"></script> 
+    <script type="text/javascript" src="/assets/js/main.js"></script>            
+</body>
+</html> 
+

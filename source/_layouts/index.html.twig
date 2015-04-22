@@ -1,0 +1,80 @@
+{% set active =1 %}
+{% extends "layout.html.twig" %}
+{% block title %}{{page.title}}{% endblock %}
+{% block description %}{{page.description}}{% endblock %}
+{% block wrapper %}
+    <!-- ******CONTENT****** --> 
+    <div class="content container">
+        <div id="promo-slider" class="slider flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="http://lorempixel.com/1140/350/people/"  alt="交朋友" />
+                    <p class="flex-caption">
+                        <span class="main" >欢迎访问RSYWX.com</span>
+                        <br />
+                        <span class="secondary clearfix" >我们来交个朋友</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/1140/350/technics"  alt="谈技术" />
+                    <p class="flex-caption">
+                        <span class="main" >谈点技术</span>
+                        <br />
+                        <span class="secondary clearfix" >Dart, Hack, PHP, etc...</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/1140/350/nightlife"  alt="找乐子" />
+                    <p class="flex-caption">
+                        <span class="main" >寻点开心</span>
+                        <br />
+                        <span class="secondary clearfix" >旅游、摄影、打P、聊天……</span>
+                    </p>
+                </li>
+            </ul><!--//slides-->
+        </div><!--//flexslider-->
+
+        {{page.blocks.content|raw}}
+        <section class="awards">
+            <div id="awards-carousel" class="awards-carousel carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <ul class="logos">
+                            <li class="col-md-2 col-sm-2 col-xs-4">
+                                <a href="https://rsywx.net"><img class="img-responsive" src="assets/images/sites/rsywx.net.png"  alt="任氏有无轩" /></a>                     
+                            </li>
+
+                        </ul><!--//slides-->
+                        <p>任氏有无轩（<a href="https://rsywx.net">RSYWX.net</a>）是我的个人主力站点，包含藏书、读书、博客、维客、资源等多项内容。</p>
+                    </div><!--//item-->
+                    <div class="item">
+                        <ul class="logos">
+                            <li class="col-md-2 col-sm-2 col-xs-4">
+                                <a href="http://www.go4pro.org"><img class="img-responsive" src="assets/images/sites/go4pro.org.png"  alt="Go4Pro.org" /></a>                     
+                            </li>
+
+                        </ul><!--//slides-->
+                        <p>狗屎皮（<a href="http://www.go4pro.org">Go4Pro.org</a>）是BT群编程文章的汇聚点，讨论主题包括PHP，Python，Web等等。</p>
+                    </div><!--//item-->
+                    <div class="item">
+                        <ul class="logos">
+                            <li class="col-md-2 col-sm-2 col-xs-4">
+                                <a href="https://btqun.com"><img class="img-responsive" src="assets/images/sites/btqun.comm.png"  alt="BTQun.com" /></a>                     
+                            </li>
+
+                        </ul><!--//slides-->
+                        <p>BT群（<a href="https://btqun.com">BTQun.com</a>）是BT群共享各类种子的地方，受邀准入。</p>
+                    </div><!--//item-->
+
+                </div><!--//carousel-inner-->
+                <a class="left carousel-control" href="#awards-carousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="right carousel-control" href="#awards-carousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+
+            </div>
+        </section>
+    </div><!--//content-->
+{% endblock %}

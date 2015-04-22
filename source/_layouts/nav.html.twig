@@ -1,0 +1,38 @@
+<!-- ******NAV****** -->
+<nav class="main-nav" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button><!--//nav-toggle-->
+        </div><!--//navbar-header-->            
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="{%if active==1%}active {%endif%}nav-item"><a href="/">首页</a></li>
+                <li class="{%if active==2%}active {%endif%}nav-item"><a href="/jianshus">简书汇编</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pages <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Leadership Team</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="job-single.html">Single Job</a></li>
+                        <li><a href="gallery.html">Gallery (3 columns)</a></li>
+                        <li><a href="gallery-2.html">Gallery (4 columns)</a></li>
+                        <li><a href="gallery-3.html">Gallery (2 columns)</a></li>
+                        <li><a href="gallery-4.html">Gallery (with sidebar)</a></li>
+                        <li><a href="gallery-album.html">Single Gallery</a></li>
+                        <li><a href="gallery-album-2.html">Single Gallery (with sidebar)</a></li>
+                        <li><a href="faq.html">FAQ</a></li>                                
+                        <li><a href="privacy.html">Privacy Policy</a></li> 
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>                   
+                    </ul>
+                </li><!--//dropdown-->
+                <li class="{%if active==99%}active {%endif%}nav-item"><a href="/contact">联络</a></li>
+            </ul><!--//nav-->
+        </div><!--//navabr-collapse-->
+    </div><!--//container-->
+</nav><!--//main-nav-->
