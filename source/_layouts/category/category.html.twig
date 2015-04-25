@@ -2,20 +2,20 @@
 {% extends 'layout.html.twig' %}
 
 {% block title %}
-    TAG: {{page.tag}} | RSYWX.com
+    分类：{{page.category}} | RSYWX.com
 {% endblock %}
 {% block wrapper %}
     <!-- ******CONTENT****** --> 
     <div class="content container">
         <div class="page-wrapper">
             <header class="page-heading clearfix">
-                <h1 class="heading-title pull-left">TAG: {{page.tag}}</h1>
+                <h1 class="heading-title pull-left">分类：{{page.category}}</h1>
                 <div class="breadcrumbs pull-right">
                     <ul class="breadcrumbs-list">
                         <li class="breadcrumbs-label">你的位置：</li>
                         <li><a href="index.html">首页</a><i class="fa fa-angle-right"></i></li>
-                        <li>TAG云<i class="fa fa-angle-right"></i></li>
-                        <li class="current">{{page.tag}}</li>
+                        <li>分类<i class="fa fa-angle-right"></i></li>
+                        <li class="current">{{page.category}}</li>
                     </ul>
                 </div><!--//breadcrumbs-->
             </header> 
@@ -25,7 +25,7 @@
                         <article class="news-item">
 
                             <ul>
-                                {% for jianshu in page.tag_jianshus %}
+                                {% for jianshu in page.category_jianshus %}
                                     <li><a href="{{ jianshu.url }}">{{ jianshu.title }}</a></li>
                                     {% endfor %}
                             </ul>
