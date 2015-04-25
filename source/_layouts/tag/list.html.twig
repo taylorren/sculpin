@@ -1,0 +1,13 @@
+<section class="widget has-divider">
+    <h3 class="title">TAG云</h3>
+    <article class="events-item row page-row">                                    
+        <div class="date-label-wrapper col-md-3 col-sm-4 col-xs-4">
+            <p class="date-label">
+                {% for tag, jianshus in data.jianshus_tags %}
+                    <span class="month">{{tag}} ({{jianshus|length}})</span>
+                {% endfor %}
+            </p>
+        </div><!--//date-label-wrapper-->
+    </article>
+
+</section><!--//widget-->

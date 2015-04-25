@@ -34,7 +34,31 @@
             </ul><!--//slides-->
         </div><!--//flexslider-->
 
-        {{page.blocks.content|raw}}
+        <section class="news">
+            <h1 class="section-heading text-highlight"><span class="line">简书汇编</span></h1>     
+            <div class="carousel-controls">
+                <a class="prev" href="#news-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+                <a class="next" href="#news-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
+            </div><!--//carousel-controls--> 
+            <div class="section-content clearfix">
+                <div id="news-carousel" class="news-carousel carousel slide">
+                    <div class="carousel-inner">
+
+                        <div class="item active"> 
+                            {% for key, jianshu in data.jianshus|slice(0,6) %}
+                                {% include "jianshu/excerpt.html.twig" %}
+                                {% if key == 2 %}
+                                </div><!--//item-->
+                                <div class="item"> 
+                                {% endif %}
+                                {% if key ==5 %}
+                                </div><!--//item-->
+                            {% endif %}
+                        {% endfor %}
+                    </div><!--//carousel-inner-->
+                </div><!--//news-carousel-->  
+            </div><!--//section-content-->     
+        </section><!--//news-->
         <section class="awards">
             <div id="awards-carousel" class="awards-carousel carousel slide">
                 <div class="carousel-inner">

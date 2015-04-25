@@ -11,11 +11,13 @@ sculpin_content_types:
         enabled: true
         taxonomies:
             - tags
-            - categories
+            - category
         permalink: jianshu/:year/:month/:day/:title/
             
     posts:
         enabled: false
+        
+    
 
 services:
     twig.extension.text:
