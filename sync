@@ -1,1 +1,1 @@
-rsync -avze 'ssh -p 28632' output_prod/ tr@rsywx.net:/home/tr/www/rsywx.com
+rsync -avze 'ssh -p 28632' output_prod/* tr@rsywx.net:~/www/rsywx.com
