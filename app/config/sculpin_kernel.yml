@@ -1,26 +1,35 @@
 sculpin_markdown:
     parser_class: Sculpin\Bundle\MarkdownBundle\PhpMarkdownExtraParser
     extensions: ['md']
-    
+
 sculpin_content_types:
-    jianshus:
+    reports:
         type: path
-        path: _jianshus
-        singular_name: jianshu
-        layout: jianshu/single
+        path: _reports
+        singular_name: report
+        layout: report/single
         enabled: true
         taxonomies:
             - tags
             - category
-        permalink: jianshu/:year/:month/:day/:title/
-            
+        permalink: report/:slug_filename.html
+    gctis:
+      type: path
+      path: _gcti
+      singular_name: gcti
+      layout: report/single
+      enabled: true
+      taxonomies:
+          - tags
+          - category
+      permalink: gcti/:slug_filename.html
+
+
     posts:
         enabled: false
-        
-    
 
 services:
     twig.extension.text:
         class: Twig_Extensions_Extension_Text
         tags:
-             - { name: twig.extension }        
+             - { name: twig.extension }

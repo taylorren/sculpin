@@ -3,7 +3,7 @@
 {% block title %}{{page.title}}{% endblock %}
 {% block description %}{{page.description}}{% endblock %}
 {% block wrapper %}
-    <!-- ******CONTENT****** --> 
+    <!-- ******CONTENT****** -->
     <div class="content container">
         <div id="promo-slider" class="slider flexslider">
             <ul class="slides">
@@ -16,48 +16,40 @@
                     </p>
                 </li>
                 <li>
-                    <img src="http://lorempixel.com/1140/350/technics"  alt="谈技术" />
+                    <img src="http://lorempixel.com/1140/350/technics"  alt="找资源" />
                     <p class="flex-caption">
-                        <span class="main" >谈点技术</span>
+                        <span class="main" >找点资源</span>
                         <br />
-                        <span class="secondary clearfix" >Dart, Hack, PHP, etc...</span>
-                    </p>
-                </li>
-                <li>
-                    <img src="http://lorempixel.com/1140/350/nightlife"  alt="找乐子" />
-                    <p class="flex-caption">
-                        <span class="main" >寻点开心</span>
-                        <br />
-                        <span class="secondary clearfix" >旅游、摄影、打P、聊天……</span>
+                        <span class="secondary clearfix" >译作、文件……</span>
                     </p>
                 </li>
             </ul><!--//slides-->
         </div><!--//flexslider-->
 
         <section class="news">
-            <h1 class="section-heading text-highlight"><span class="line">简书汇编</span></h1>     
+            <h1 class="section-heading text-highlight"><span class="line">项目汇编</span></h1>
             <div class="carousel-controls">
                 <a class="prev" href="#news-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
                 <a class="next" href="#news-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
-            </div><!--//carousel-controls--> 
+            </div><!--//carousel-controls-->
             <div class="section-content clearfix">
                 <div id="news-carousel" class="news-carousel carousel slide">
                     <div class="carousel-inner">
 
-                        <div class="item active"> 
-                            {% for key, jianshu in data.jianshus|slice(0,6) %}
-                                {% include "jianshu/excerpt.html.twig" %}
+                        <div class="item active">
+                            {% for key, report in data.reports|slice(0,6) %}
+                                {% include "report/excerpt.html.twig" %}
                                 {% if key == 2 %}
                                 </div><!--//item-->
-                                <div class="item"> 
+                                <div class="item">
                                 {% endif %}
                                 {% if key ==5 %}
                                 </div><!--//item-->
                             {% endif %}
                         {% endfor %}
                     </div><!--//carousel-inner-->
-                </div><!--//news-carousel-->  
-            </div><!--//section-content-->     
+                </div><!--//news-carousel-->
+            </div><!--//section-content-->
         </section><!--//news-->
         <section class="awards">
             <div id="awards-carousel" class="awards-carousel carousel slide">
@@ -65,7 +57,7 @@
                     <div class="item active">
                         <ul class="logos">
                             <li class="col-md-2 col-sm-2 col-xs-4">
-                                <a href="https://rsywx.net"><img class="img-responsive" src="assets/images/sites/rsywx.net.png"  alt="任氏有无轩" /></a>                     
+                                <a href="https://rsywx.net"><img class="img-responsive" src="assets/images/sites/rsywx.net.png"  alt="任氏有无轩" /></a>
                             </li>
 
                         </ul><!--//slides-->
@@ -74,7 +66,7 @@
                     <div class="item">
                         <ul class="logos">
                             <li class="col-md-2 col-sm-2 col-xs-4">
-                                <a href="http://www.go4pro.org"><img class="img-responsive" src="assets/images/sites/go4pro.org.png"  alt="Go4Pro.org" /></a>                     
+                                <a href="http://www.go4pro.org"><img class="img-responsive" src="assets/images/sites/go4pro.org.png"  alt="Go4Pro.org" /></a>
                             </li>
 
                         </ul><!--//slides-->
@@ -83,7 +75,7 @@
                     <div class="item">
                         <ul class="logos">
                             <li class="col-md-2 col-sm-2 col-xs-4">
-                                <a href="https://btqun.com"><img class="img-responsive" src="assets/images/sites/btqun.com.png"  alt="BTQun.com" /></a>                     
+                                <a href="https://btqun.com"><img class="img-responsive" src="assets/images/sites/btqun.com.png"  alt="BTQun.com" /></a>
                             </li>
 
                         </ul><!--//slides-->

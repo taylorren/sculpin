@@ -1,5 +1,5 @@
 ---
-generator: jianshus_category_index
+generator: reports_category_index
 layout: category/category
-use: [jianshus, jianshus_category, jianshus_tags]
+use: [reports, reports_category, reports_tags]
 ---

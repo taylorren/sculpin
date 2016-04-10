@@ -5,7 +5,7 @@
     TAG: {{page.tag}} | RSYWX.com
 {% endblock %}
 {% block wrapper %}
-    <!-- ******CONTENT****** --> 
+    <!-- ******CONTENT****** -->
     <div class="content container">
         <div class="page-wrapper">
             <header class="page-heading clearfix">
@@ -18,25 +18,25 @@
                         <li class="current">{{page.tag}}</li>
                     </ul>
                 </div><!--//breadcrumbs-->
-            </header> 
+            </header>
             <div class="page-content">
                 <div class="row page-row">
-                    <div class="news-wrapper col-md-8 col-sm-7">                         
+                    <div class="news-wrapper col-md-8 col-sm-7">
                         <article class="news-item">
 
                             <ul>
-                                {% for jianshu in page.tag_jianshus %}
-                                    <li><a href="{{ jianshu.url }}">{{ jianshu.title }}</a></li>
+                                {% for report in page.tag_reports %}
+                                    <li><a href="{{ report.url }}">{{ report.title }}</a></li>
                                     {% endfor %}
                             </ul>
                         </article><!--//news-item-->
                     </div><!--//news-wrapper-->
-                    <aside class="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">                    
+                    <aside class="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
                         {% include 'category/list.html.twig' %}
                         {% include 'tag/list.html.twig' %}
                     </aside>
                 </div><!--//page-row-->
             </div><!--//page-content-->
-        </div><!--//page--> 
+        </div><!--//page-->
     </div><!--//content-->
 {% endblock %}

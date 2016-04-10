@@ -1,10 +1,10 @@
 <section class="widget has-divider">
     <h3 class="title">TAG云</h3>
-        <article class="news-item row">       
+        <article class="news-item row">
             <div class="details col-md-10 col-sm-9 col-xs-9">
-                {% for tag, jianshus in data.jianshus_tags %}
-                    <span class="title"><a href="/tags/{{tag}}/">{{tag}}</a> ({{jianshus|length}})</span>
+                {% for tag, reports in data.reports_tags %}
+                    <span class="title"><a href="/tags/{{tag}}/">{{tag}}</a> ({{reports|length}})</span>
                 {% endfor %}            </div>
         </article><!--//news-item-->
-    
+
 </section><!--//widget-->
