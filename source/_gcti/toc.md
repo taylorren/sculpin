@@ -1,6 +1,6 @@
 ---
 layout: report/single
-title: "上帝创造了整数 | 目录"
+title: "目录"
 slug: toc
 book: 上帝创造了整数
 description: "目录"

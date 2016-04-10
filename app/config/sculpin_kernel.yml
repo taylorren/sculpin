@@ -5,7 +5,7 @@ sculpin_markdown:
 sculpin_content_types:
     reports:
         type: path
-        path: _reports
+        path: _report
         singular_name: report
         layout: report/single
         enabled: true
@@ -24,7 +24,14 @@ sculpin_content_types:
           - category
       permalink: gcti/:slug_filename.html
 
-
+    booknames:
+        type: path
+        path: _bookname
+        singular_name: bookname
+        layout: report/single
+        enabled: true
+        permalink: bookname/:slug_filename.html
+        
     posts:
         enabled: false
 
