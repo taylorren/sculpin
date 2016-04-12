@@ -27,7 +27,7 @@
         </div><!--//flexslider-->
 
         <section class="news">
-            <h1 class="section-heading text-highlight"><span class="line">项目汇编</span></h1>
+            <h1 class="section-heading text-highlight"><span class="line">首页</span></h1>
             <div class="carousel-controls">
                 <a class="prev" href="#news-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
                 <a class="next" href="#news-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
@@ -37,7 +37,7 @@
                     <div class="carousel-inner">
 
                         <div class="item active">
-                            {% for key, report in data.reports|slice(0,6) %}
+                            {% for key, report in data.posts|slice(0,6) %}
                                 {% include "report/excerpt.html.twig" %}
                                 {% if key == 2 %}
                                 </div><!--//item-->

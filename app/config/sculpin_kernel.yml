@@ -33,7 +33,13 @@ sculpin_content_types:
         permalink: bookname/:slug_filename.html
         
     posts:
-        enabled: false
+        enabled: true
+        type: path
+        path: _post
+        singular_name: post
+        layout: report/single
+        enabled: true
+        permalink: post/:slug_filename.html
 
 services:
     twig.extension.text:
