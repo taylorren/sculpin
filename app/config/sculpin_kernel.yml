@@ -31,7 +31,7 @@ sculpin_content_types:
         layout: report/single
         enabled: true
         permalink: bookname/:slug_filename.html
-        
+
     posts:
         enabled: true
         type: path
@@ -40,6 +40,16 @@ sculpin_content_types:
         layout: report/single
         enabled: true
         permalink: post/:slug_filename.html
+
+    wesleys:
+        enabled: true
+        type: path
+        path: _wesley
+        singular_name: wesley
+        layout: report/singlewe
+        enabled: true
+        permalink: wesley/:slug_filename.html
+
 
 services:
     twig.extension.text:
