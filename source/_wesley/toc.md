@@ -34,7 +34,7 @@ description: "目录"
 [078. 转世暗号]({{site.url}}/wesley/078.html)|[079. 暗号之二]({{site.url}}/wesley/079.html)|[080. 在数难逃]({{site.url}}/wesley/080.html)|[081. 从阴间来]({{site.url}}/wesley/081.html)
 [082. 到阴间去]({{site.url}}/wesley/082.html)|[083. 阴差阳错]({{site.url}}/wesley/083.html)|[084. 祸根]({{site.url}}/wesley/084.html)|[085. 阴魂不散]({{site.url}}/wesley/085.html)
 [086. 许愿]({{site.url}}/wesley/086.html)|[087. 还阳]({{site.url}}/wesley/087.html)|[088. 运气]({{site.url}}/wesley/088.html)|[089. 开心]({{site.url}}/wesley/089.html)
-[090. 将来]({{site.url}}/wesley/090.html)|[第091. 改变]({{site.url}}/wesley/091.html)|[092. 闯祸]({{site.url}}/wesley/092.html)|[093. 解脫]({{site.url}}/wesley/093.html)
+[090. 将来]({{site.url}}/wesley/090.html)|[091. 改变]({{site.url}}/wesley/091.html)|[092. 闯祸]({{site.url}}/wesley/092.html)|[093. 解脫]({{site.url}}/wesley/093.html)
 [094. 遗传]({{site.url}}/wesley/094.html)|[095. 爆炸]({{site.url}}/wesley/095.html)|[096. 水晶宫]({{site.url}}/wesley/096.html)|[097. 前世]({{site.url}}/wesley/097.html)
 [098. 新武器]({{site.url}}/wesley/098.html)|[099. 病毒]({{site.url}}/wesley/099.html)|[100. 算账]({{site.url}}/wesley/100.html)|[101. 原形]({{site.url}}/wesley/101.html)
 [102. 活路]({{site.url}}/wesley/102.html)|[103. 双程]({{site.url}}/wesley/103.html)|[104. 洪荒]({{site.url}}/wesley/104.html)|[105. 买命]({{site.url}}/wesley/105.html)
